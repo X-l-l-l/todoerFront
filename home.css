@@ -1,0 +1,260 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Instrument Sans", sans-serif
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color:whitesmoke;
+}
+
+.content{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.left{
+    background: linear-gradient(145deg, #8AAAE5 0%, #c0cfec 100%);
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 0px 20px 20px 0px;
+    position: fixed;
+}
+
+.left div{
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.right{
+    margin-left: 25%;
+    background-color: whitesmoke;
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.top{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.search{
+    margin-left: 10%;
+}
+.name{
+    margin-right: 10%;
+}
+
+.lists{
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+}
+
+.list{
+    width: 14.2vw;
+    background-color: aliceblue;
+    padding: 15px;
+
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 20px;
+}
+
+.items div{
+    display: flex;
+    gap: 20px;
+}
+
+input[type=checkbox]:checked + label.str {
+    text-decoration: line-through;
+    opacity: 70%;
+}
+
+.newlist{
+    display: flex;
+    width: 15vw;
+    background-color: brown;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.newlist:hover{
+    cursor: pointer;
+}
+
+.newlistform{
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+    background-color: brown;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.newitemname {
+    width: 150px;
+    margin-right: 20px;
+}
+
+#newlistform{
+    display: none;
+}
+
+#newlist{
+    display: flex;
+}
+
+.newlist, .newlistform{
+    height: 10vw;
+    border: solid whitesmoke;
+}
+
+.newlist:hover{
+    background: transparent;
+    border-style: solid;
+    border-color: #8AAAE5;
+}
+
+.list, .newlistform, .newlist{
+    border-radius: 20px;
+    background-color: #c0cfec;
+}
+
+input[type="text"]{
+    height: 3vh;
+    border-radius: 25px;
+    width: 200px;
+    border-style: none;
+    padding-left: 5px;
+
+}
+
+input[type="button"]{
+    border-style: solid;
+    border-color: #c0cfec;
+    border-radius: 25px;
+    margin: 7px;
+    padding: 5px;
+    background-color:#8AAAE5; 
+    cursor: pointer;
+}
+
+input[type="button"]:hover{
+    background: whitesmoke;
+    border-style: solid;
+    border-color: #8AAAE5;
+}
+
+.iteminput{
+    margin-top:20px
+}
+
+.itemline{
+    background: linear-gradient(360deg, #8AAAE5 0%, #c0cfec 40%, #c0cfec 100%);
+    border-radius: 10px;
+    padding-left: 3px;
+}
+
+.left p:not(.listbutton){
+    background-color: transparent;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    width: 200px;
+    margin-left: -20px;
+    padding-left: 50px;
+}
+
+.left p:not(.listbutton):hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.listbutton{
+    background-color: whitesmoke;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    width: 200px;
+    margin-left: -20px;
+    padding-left: 50px;
+}
+
+* {
+    transition: background-color 400ms;
+}
+
+.name{
+    font-size: 20px;
+}
+
+.profile{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+}
+
+.material-symbols-outlined{
+    height: 25px;
+    width: 25px;
+    transition: color 400ms;
+}
+
+.material-symbols-outlined:hover{
+    color: #8AAAE5;
+    cursor: pointer;
+}
+
+.notif{
+    position: fixed;
+    right: -400px;
+    top: 100px;
+    background-color: #c0cfec;
+    width: 250px;
+    padding: 7.5px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: transform 1s, opacity 1s;
+}
+.notif p{
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+.visible{
+    transform: translate(-500px);
+    opacity: 100;
+}

@@ -1,0 +1,88 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="register.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="register.js"></script>
+
+    <title>ToDo'er</title>
+  </head>
+  <body>
+    <div class="mid_container">
+      <div class="welcome">
+        <h1>Welcome to ToDo'er</h1>
+        <h4>Your all in one task manager</h4>
+        <p>
+          Everything you need to keep track of your tasks and dedlines into one
+          single website. Easy to access and use anywhere, ToDo'er lets you
+          create and complete tasks as so to ease your workflow and let your
+          mind concentrate on how to solve problems, not when.
+        </p>
+      </div>
+      <form class="login">
+        <h1>USER REGISTER</h1>
+        <input
+          class="field"
+          type="name"
+          name="name"
+          placeholder="name"
+          required="required"
+        />
+        <input
+          class="field"
+          type="date"
+          name="date"
+          placeholder="birthdate"
+          required="required"
+        />
+        <input
+          class="field"
+          type="username"
+          name="username"
+          placeholder="username"
+          required="required"
+        />
+        <input
+          class="field"
+          type="email"
+          name="email"
+          placeholder="email"
+          required="required"
+        />
+        <input
+          class="field"
+          type="password"
+          name="password"
+          placeholder="password"
+          required="required"
+        />
+        <input
+          class="field"
+          type="password"
+          name="confirm"
+          placeholder="confirm password"
+          required="required"
+        />
+        <a href="login.html">Back to login</a>
+        <input id="login" class="submit" type="button" value="Register" />
+      </form>
+    </div>
+    <div class="empty"><p>Please fill all fields</p></div>
+    <div class="error">
+      <p>An account with this email/username already exists</p>
+    </div>
+    <div class="success">
+      <p>Registration complete!</p>
+      <p>Go back to the login page to sign in</p>
+    </div>
+    <div class="match"><p>Passwords don't match</p></div>
+  </body>
+</html>

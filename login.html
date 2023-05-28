@@ -1,0 +1,56 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="login.js"></script>
+    <title>ToDo'er</title>
+  </head>
+  <body>
+    <div class="mid_container">
+      <div class="welcome">
+        <h1>Welcome to ToDo'er</h1>
+        <h4>Your all in one task manager</h4>
+        <p>
+          Everything you need to keep track of your tasks and dedlines into one
+          single website. Easy to access and use anywhere, ToDo'er lets you
+          create and complete tasks as so to ease your workflow and let your
+          mind concentrate on how to solve problems, not when.
+        </p>
+      </div>
+      <form action="home.html" method="post" class="login">
+        <h1>USER LOGIN</h1>
+        <input
+          name="username"
+          class="field"
+          type="username"
+          placeholder="username"
+          required="required"
+        />
+        <input
+          name="password"
+          class="field"
+          type="password"
+          placeholder="password"
+          required="required"
+        />
+        <div>
+          <a href="forgot.html">Forgot password?</a
+          ><a href="register.html">Register</a>
+        </div>
+        <input id="login" class="submit" type="button" value="Log In" />
+      </form>
+    </div>
+    <div class="empty"><p>Please fill all fields</p></div>
+    <div class="error"><p>Username or password incorrect</p></div>
+  </body>
+</html>

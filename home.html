@@ -1,0 +1,70 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="home.css" />
+    <script src="home.js"></script>
+    <title>ToDo'er</title>
+  </head>
+  <body>
+    <div class="background">
+      <div class="content">
+        <div class="left">
+          <div class="title">
+            <h1 id="title">ToDo'er</h1>
+          </div>  
+          <div class="menu">
+            <p class="listbutton">Lists</p>
+            <p onclick="groups()">Groups</p>
+          </div>
+          <div class="settings">
+            <p onclick="settings()">Settings</p>
+            <p onclick="logout()">Log out</p>
+          </div>
+        </div>
+        <div class="right">
+          <div class="top">
+            <input
+              onkeyup="search()"
+              class="search"
+              type="text"
+              placeholder="Search"
+            />
+            <div class="profile">
+              <p class="name"></p>
+              <span onclick="getNotifications()" class="material-symbols-outlined"> notifications </span>
+            </div>
+          </div>
+          <div class="lists">
+            <div id="newlist" class="newlist" onclick="becomeInvisible()">
+              Add New
+            </div>
+            <div
+              id="newlistform"
+              class="newlistform"
+              onmouseleave="becomeVisible()"
+            >
+              <input type="text" placeholder="title" name="title" />
+              <input type="text" placeholder="description" name="description" />
+              <input onclick="createList()" type="button" value="Create" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="notif">
+      <input onclick="clearNotifications()" type="button" value="clear">
+    </div>
+
+  </body>
+</html>

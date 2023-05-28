@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo'er</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="settings.css" />
+    <script src="settings.js"></script>
+</head>
+<body>
+    <div class="pannel">
+        <h1 class="title">Update account</h1>
+        <p class="text">Provide the data you want changed.</p>
+        <input
+          class="field"
+          type="name"
+          name="name"
+          placeholder="name"
+          required="required"
+        />
+        <input
+          class="field"
+          type="date"
+          name="date"
+          placeholder="birthdate"
+          required="required"
+        />
+        <input
+          class="field"
+          type="email"
+          name="email"
+          placeholder="email"
+          required="required"
+        />
+        <input
+          class="field"
+          type="password"
+          name="password"
+          placeholder="password"
+          required="required"
+        />
+        <input onclick="update()" class="button" type="button" value="Update">
+    </div>
+</body>
+</html>
